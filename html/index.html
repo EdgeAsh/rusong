@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>首页-店铺详情</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="https://at.alicdn.com/t/font_391867_aacd9zullpfzuxr.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/swiper.min.css">
+	<script src='../js/resize.js'></script>
+</head>
+<body>
+	<header class='header clearfix'>
+		<a href="./index.html" class="head-l"><img src="../images/jd.png" alt=""></a>
+		<a href="javascript:;" id='menu'  class="head-r"><span class="iconfont icon-menu"></span></a>
+	</header>
+	<!-- 导航栏 -->
+	<div class="nav">
+		<a class="nav-item" href="./index.html"><span>电商首页</span><span class='iconfont icon-jin-arr'></span></a>
+		<a class="nav-item" href="./about.html"><span>关于我们</span><span class='iconfont icon-jin-arr'></span></a>
+		<a class="nav-item" href="./case.html"><span>案例展示</span><span class='iconfont icon-jin-arr'></span></a>
+		<a class="nav-item" href="./contact.html"><span>联系我们</span><span class='iconfont icon-jin-arr'></span></a>
+		<a id='btn-up' class="nav-item" href="javascript:;"><span class='iconfont icon-up-arr'></span></a>
+	</div>
+	
+	<!-- 轮播图 -->
+	<div class="swiper-container">
+	    <!-- Additional required wrapper -->
+	    <div class="swiper-wrapper">
+	        <!-- Slides -->
+	        <div class="swiper-slide">Slide 1</div>
+	        <div class="swiper-slide">Slide 2</div>
+	        <div class="swiper-slide">Slide 3</div>
+	    </div>
+	    <!-- If we need pagination -->
+	    <div class="swiper-pagination"></div>
+	</div>
+
+	<!--  -->
+
+	
+	<!-- 底部脚注 -->
+	<div class="footer">
+		<p class="ads">做电商&nbsp;&nbsp;找如松</p>
+		<p class="contact">
+			联系热线:<a href="tel:15858181492" >158-5818-1492</a><br>
+			QQ在线:<a href="javascript:;" title="qq">584805724</a>
+		</p>
+		<ul class="social">
+			<li class="social-item"><a href=""><img src="../images/qq.png" alt=""></a></li>
+			<li class="social-item"><a href="tel:15858181492"><img src="../images/tel.png" alt=""></a></li>
+			<li class="social-item"><a href=""><img src="../images/s-jd.png" alt=""></a></li>
+		</ul>
+		<p class="copyright">Copyright © <span id="time"></span>杭州市如松电子商务有限公司&nbsp;版权所有</p>
+	</div>
+	<div class="bg-plus"></div>
+	<div class="plusbox">
+		<ul>
+			<li class="plusitem">
+				<a href=""><img src="../images/plusbox_img1.png" alt=""></a>
+			</li>
+			<li class="plusitem">
+				<a href=""><img src="../images/plusbox_img2.png" alt=""></a>
+			</li>
+			<li class="plusitem">
+				<a href=""><img src="../images/plusbox_img4.png" alt=""></a>
+			</li>
+		</ul>
+	</div>
+	<!-- 底部切换栏 -->
+	<div class="bar">
+		<ul class="clearfix">
+			<li class="bar-item"><a href="./index.html" class="subitem"><span class="iconfont icon-home"></span><span class="txt">首页</span></a></li>
+			<li class="bar-item"><a href="./anli.html" class="subitem"><span class="iconfont icon-anli"></span><span class='txt'>案例</span></a></li>
+			<li class="bar-item"><a href="javascript:;" id='btn-cross'><span class="iconfont icon-cross"></span></a></li>
+			<li class="bar-item"><a href="./about.html" class="subitem"><span class="iconfont icon-about"></span><span class='txt'>关于</span></a></li>
+			<li class="bar-item"><a href="tel:15858181492" class="subitem"><span class="iconfont icon-tel"></span><span class='txt'>电话</span></a></li>
+		</ul>
+	</div>
+</body>
+	<script src='../js/jquery-3.0.0.min.js'></script>
+	<script src='../js/swiper.jquery.min.js'></script>
+	<script>
+		$(document).ready(function(){
+			var swiper = new Swiper('.swiper-container',{
+				pagination:'.swiper-pagination',
+				loop:true,
+				autoplay:true,
+				speed: 2000,
+				autoplayDisableOnInteraction:false
+			});
+
+			// 导航动画
+			$("#menu,#btn-up").on('click',function(){
+				$('.nav').slideToggle()
+			})
+			// 底部弹出
+			$('#btn-cross,.bg-plus').on('click',function(){
+				$('.bg-plus,.plusbox').fadeToggle()
+				var btc = $('#btn-cross>.iconfont')
+				btc.hasClass("rotate")? btc.css("transform","rotate(0deg)").removeClass('rotate'): btc.css("transform","rotate(-180deg)").addClass('rotate');
+			});
+		});
+	</script>
+</html>

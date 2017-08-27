@@ -1,0 +1,54 @@
+/*通用样式*/
+.red{font-size:inherit;color:#f00;font-weight:inherit;}
+
+/*头部*/
+.header{background-color:#000;height:.86rem;width:100%;}
+.head-l,.head-r{float:left;height:.86rem;font-size: 0px; padding:.1rem;line-height:.86rem;box-sizing:border-box;}
+.head-l img{width:.66rem;line-height:.86rem}
+.head-l .iconfont,.head-r .iconfont{font-size:.6rem;line-height:normal;color:#838689;}
+.head-r{float:right;}
+
+/*顶部导航栏*/
+.nav{position:fixed;background-color: #fff;z-index:10;top:0;left:0;right:0;display: none}
+.nav-item{display:block;border-bottom:.02rem solid #dedede;background-color:#f20;height:.86rem;font-size:.28rem;line-height:.86rem;padding:0 .2rem;color:#fff;}
+.nav-item:last-child{border-bottom: none;}
+.nav-item .iconfont{float:right;font-size: .36rem}
+#btn-up>.iconfont{display: block; margin:0 auto;float:none;width:1rem;font-size:.6rem;text-align: center}
+
+/*轮播图*/
+.swiper-container{width:100%;height:6rem;z-index:0;}
+
+/*footer*/
+.footer{text-align: center}
+.footer .ads{font-size:.28rem;line-height: .72rem}
+.footer .contact{font-size:.28rem;line-height: .48rem}
+.footer .social{font-size:0px;}
+.footer .social .social-item{display: inline-block;width: 33%;}
+.footer .social a{display: inline-block;width: 33.3%;padding:50% 50% 50% 0;position: relative;font-size: 0}
+.footer .social a img{width:90%;position: absolute;top:10%; left:5%;}
+.footer .copyright{font-size: .28rem;line-height:.72rem;color:#666;}
+
+/*底部弹出*/
+.bg-plus{position:fixed;z-index:10;left:0;top:0;bottom:0;right:0;background-color: rgba(255,255,255,.6);display:none;}
+.plusbox{position:fixed;z-index:20;bottom:1.5rem;left:0;font-size:0px;width:100%;display:none;}
+.plusbox .plusitem{display:inline-block;width:33.3%;font-size:0;text-align: center}
+.plusitem a{position:relative;display:inline-block;padding:50% 50% 0 0;}
+.plusitem a img{position:absolute;width:90%;top:5%;left:5%;}
+
+/*底部切换页面*/
+.bar{position:fixed;z-index:100;bottom: 0;left: 0;background-color: #000;width:100%;font-size:0px;text-align: center;box-shadow:0 -.02rem .10rem #888}
+.bar-item{float:left;width:20%;}
+.subitem{color:#838689;;width:100%;}
+.subitem .iconfont{font-size:.6rem}
+@media (min-device-width : 375px){.subitem {padding:.1rem 0;}}
+.subitem .txt{font-size:.2rem;display: block}
+#btn-cross{display:block;width:100%;position:relative;min-height:.86rem;color:#838689;}
+#btn-cross .icon-cross{font-size:1rem;position: absolute;top:-10%;left:50%;margin-left:-.5rem;border-radius:50%;background-color: #000;transition:transform .3s linear;}
+
+
+
+
+
+
+
+
