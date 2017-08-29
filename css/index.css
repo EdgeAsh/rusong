@@ -5,7 +5,9 @@
 .header{background-color:#000;height:.86rem;width:100%;}
 .head-l,.head-r{float:left;height:.86rem;font-size: 0px; padding:.1rem;line-height:.86rem;box-sizing:border-box;}
 .head-l img{width:.66rem;line-height:.86rem}
-.head-l .iconfont,.head-r .iconfont{font-size:.6rem;line-height:normal;color:#838689;}
+.head-l .iconfont,.head-r .iconfont{line-height:normal;color:#838689;}
+.head-r .iconfont{font-size:.6rem;}
+.head-l .iconfont{font-size:.5rem;}
 .head-r{float:right;}
 
 /*顶部导航栏*/
@@ -17,6 +19,7 @@
 
 /*轮播图*/
 .swiper-container{width:100%;height:6rem;z-index:0;}
+.swiper-container img{width:100%; height:100%;}
 
 /*footer*/
 .footer{text-align: center;margin:.5rem 0 1.2rem;border-top:.1rem solid #000;}
@@ -68,6 +71,7 @@
 .jdrz5{}
 .jdrz5 .img-wrap{display: -webkit-flex; /* Safari */display: flex;}
 .jdrz5 .img-wrap .img{text-align:center;flex:1;}
+.jdrz5 .img-wrap .img img{width:80%;}
 .ad5{padding:.1rem;}
 .ad5 .item{border:1px solid #666; border-radius:.1rem;padding:.1rem;margin-bottom:.1rem}
 .ad5 .item .title{font-size:.28rem;}
@@ -82,11 +86,16 @@
 
 
 /*案例页*/
+.case{background-color:#666;padding:.2rem;}
+.case .item{margin-bottom:.2rem;}
+.case .item img{width:100%;border-radius: .1rem;}
 
-
-
-
-
+/*关于*/
+.about{padding:.1rem;}
+.about .title{font-size:.32rem;margin-bottom:.1rem;}
+.about .text{font-size:.28rem; line-height:1.2;padding-left:.1rem;}
+.about .text img{float:left;width:20%;}
+.about .text .cor-culture{text-align: center}
 
 
 
