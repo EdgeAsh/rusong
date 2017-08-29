@@ -19,7 +19,7 @@
 .swiper-container{width:100%;height:6rem;z-index:0;}
 
 /*footer*/
-.footer{text-align: center}
+.footer{text-align: center;margin:.5rem 0 1.2rem;border-top:.1rem solid #000;}
 .footer .ads{font-size:.28rem;line-height: .72rem}
 .footer .contact{font-size:.28rem;line-height: .48rem}
 .footer .social{font-size:0px;}
@@ -44,6 +44,45 @@
 .subitem .txt{font-size:.2rem;display: block}
 #btn-cross{display:block;width:100%;position:relative;min-height:.86rem;color:#838689;}
 #btn-cross .icon-cross{font-size:1rem;position: absolute;top:-10%;left:50%;margin-left:-.5rem;border-radius:50%;background-color: #000;transition:transform .3s linear;}
+
+
+/*首页*/
+.jdrz1{text-align: center;border-bottom:1px solid #dedede;}
+.jdrz1 .big-title{font-size:1rem; line-height: 1.2rem; font-weight: 700}
+.jdrz1 .sml-title{font-size:.5rem; line-height: .6rem; font-weight: 400}
+
+.jdrz2{font-size:.28rem;text-align: center;line-height:.56rem;font-weight:bold;padding: .5rem 0;}
+
+.jdrz3{padding:.5rem 0;}
+.jdrz3 ul{font-size:0;display: -webkit-flex; /* Safari */display: flex;}
+.jdrz3 .item{flex:1;box-sizing:border-box;padding:0 .1rem;vertical-align: top}
+.jdrz3 .item img{width:100%;}
+.jdrz3 .item .title{font-size:.30rem; font-weight:bold;line-height:1.1;margin:.1rem 0;}
+.jdrz3 .item .content{font-size:.26rem;text-align: center}
+
+.jdrz4{padding:.2rem;}
+.jdrz4 ol{padding-left:.3rem;}
+.jdrz4 .title{font-size:.3rem;font-weight: 400; line-height: .5rem}
+.jdrz4 .item{list-style:decimal;font-size:.24rem; line-height: .36rem}
+
+.jdrz5{}
+.jdrz5 .img-wrap{display: -webkit-flex; /* Safari */display: flex;}
+.jdrz5 .img-wrap .img{text-align:center;flex:1;}
+.ad5{padding:.1rem;}
+.ad5 .item{border:1px solid #666; border-radius:.1rem;padding:.1rem;margin-bottom:.1rem}
+.ad5 .item .title{font-size:.28rem;}
+.ad5 .item .content{font-size:.28rem;}
+
+.jdrz6{padding:0 .1rem;}
+.jdrz6 .advan-title{font-size:.36rem;line-height: 1.5}
+.jdrz6 .advan{font-size:.24rem;padding-left:.1rem;line-height:1.5}
+.jdrz6 .advan .aitem{display: -webkit-flex; /* Safari */display: flex;}
+.jdrz6 .advan .aitem .iconfont{color:#f00;flex:0 0 .24rem;vertical-align: center;line-height:1.2;margin-right: .1rem;margin-top:-1px;}
+.jdrz6 .advan .aitem span{flex:1;line-height: 1.2}
+
+
+/*案例页*/
+
 
 
 
